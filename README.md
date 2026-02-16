@@ -1,0 +1,2 @@
+# Splunk-Security-Investigation-Project-BOTS-v3-Dataset-
+Performed a security investigation using Splunk Enterprise and the BOTS v3 dataset to identify suspicious outbound traffic and potential command-and-control beaconing. Analyzed DNS, HTTP, and TCP stream logs, pivoted across source/destination IPs, and used time-bucketed flow analysis to detect periodic encrypted connections indicative of malware.
