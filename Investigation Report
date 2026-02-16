@@ -1,0 +1,11 @@
+ip_table.png - Identified high-communication internal hosts by counting unique destination IPs; helped select 192.168.70.186 as the investigation starting point.
+
+destip.png - Ranked destination IPs contacted by the host; revealed 45.77.53.176 as a frequent external connection and likely suspicious endpoint.
+
+tcp_connection.png - Confirmed thousands of TCP connections between 192.168.70.186 → 45.77.53.176; established persistent outbound communication pattern.
+
+tcp.png - Displayed destination port usage; showed nearly all traffic on port 443, indicating encrypted outbound connections commonly used by malware C2 traffic.
+
+beaconing.png - Expanded timing visualization confirming steady, periodic outbound traffic; supported conclusion of scripted callback behavior instead of user activity.
+
+http.png - Showed only a single HTTP event; confirmed traffic was not normal web browsing and reinforced suspicion of non-interactive automated communication.
